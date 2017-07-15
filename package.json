@@ -1,0 +1,11 @@
+{
+  "name": "express-workshop",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "PiotrBerebecki",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  }
+}
