@@ -13,5 +13,5 @@ app.get('/fruit', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('App running on port');
+  console.log('App running on port 3000');
 });

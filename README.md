@@ -1,5 +1,7 @@
 # Express Code-Along Workshop 💻
 
+![express logo](./images/express-logo.png)
+
 The workshop is composed of a number of steps with source files included in the individual folders. Before we start, let's go through some information about what Express is and why we use it.
 
 ## Introduction to Express
@@ -52,7 +54,7 @@ Let's code along the solutions to the following tasks.
     - Task
       - Add a logging middleware that logs millisecond timestamp (`Date.now()`) **before** any request to our server is handled.
       - Add a logging middleware that logs millisecond timestamp (`Date.now()`) **after** every request to our server.
-      <img src="images/middleware.jpg" alt="middleware"/>
+      ![middleware flow](./images/middleware.jpg)
 
 1. **Morgan logger middleware**
     - Task
@@ -68,44 +70,54 @@ Let's code along the solutions to the following tasks.
     - Task
       - Access form data on the server
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. **Disable `Powered by express` header'**
+1. **Handle errors**
     - Task
-      - T
-    - Notes
-    ```js
-    app.disable('x-powered-by');
-    ```
+      - Serve `page node found` with a status code of 404
+      - Serve `internal server error` with a status code of 500, for example when trying to call an undefined function in one of the route handlers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. **Prepare for production**
+    - Tasks
+      - Disable `Powered by express` header'
+      ```js
+      app.disable('x-powered-by');
+      ```
+      - Enable compression
+      ```js
+      app.use('compression()');
+      ```
+      - max age on static
+      - Split app into modules
