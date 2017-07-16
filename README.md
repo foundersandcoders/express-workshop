@@ -9,6 +9,8 @@ The workshop is composed of a number of steps with source files included in the 
 
 ## Workshop tasks
 
+Let's code along the solutions to the following tasks.
+
 1. **Hello world**
     - Task
       - Setup an Express server serving `Hello world` on port 3000
@@ -23,7 +25,7 @@ The workshop is composed of a number of steps with source files included in the 
       <h1>Hello world</h1><p>Cool</p>
       ```
     - Notes
-      - Go to Chrome Dev Tools -> Elements; and find check the response in the DOM tree
+      - Go to Chrome Dev Tools -> Elements; and check the response in the DOM tree
 
 1. **Hello json**
     - Task
@@ -50,13 +52,28 @@ The workshop is composed of a number of steps with source files included in the 
     - Task
       - Add a logging middleware that logs millisecond timestamp (`Date.now()`) **before** any request to our server is handled.
       - Add a logging middleware that logs millisecond timestamp (`Date.now()`) **after** every request to our server.
-      <img src="docs/middleware.jpg" alt="middleware"/>
+      <img src="images/middleware.jpg" alt="middleware"/>
 
 1. **Morgan logger middleware**
     - Task
       - Add a `morgan` middleware to log standard Apache combined server log output
-      - Save logs in the `logs` folder
+      - Save logs in the `access.log` file in the `logs-demo` folder
       - Compare the server logs by trying two different browsers
+
+1. **Static files**
+    - Task
+      - Serve static files from the `public` folder
+
+1. **Post form data**
+    - Task
+      - Access form data on the server
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Fruit Market</title>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__container">
+      <nav class="navbar__nav" role="navigation">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="/">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link--active" href="/fruit">Fruit</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="main__container--limited-width">
+      <h1 class="main__title">FRUIT</h1>
+    </section>
+
+
+  <svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon-heart" viewBox="0 0 32 32">
+      <path d="M16.042 8.345c0 0-2-4.262-6.5-4.262-4.917 0-7.5 4.167-7.5 8.333 0 6.917 14 15.5 14 15.5s13.916-8.5 13.916-15.5c0-4.25-2.666-8.333-7.416-8.333s-6.5 4.262-6.5 4.262z"/>
+    </symbol>
+  </svg>
+
+  <section class="main__container--full-width">
+    <ul class="fruit__list" id="js-fruit-list">
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/watermelon.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Watermelon</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/strawberry.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Strawberry</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/plum.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Plum</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/pineapple.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Pineapple</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/pear.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Pear</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/peach.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Peach</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/papaya.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Papaya</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/orange.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Orange</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/kiwi.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Kiwi</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/grape.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Grape</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/cherry.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Cherry</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/blueberry.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Blueberry</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/banana.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Banana</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/avocado.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Avocado</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+      <li class="fruit__item">
+        <div class="fruit__image" style="background-image: url(https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/apple.jpg)"></div>
+        <div class="fruit__info">
+          <h2 class="fruit__name">Apple</h2>
+          <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <p>© 2017 FruitMarket</p>
+    <p><a href="#">@fruitmarket</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/fruit-fav.js"></script>
+
+</body>
+</html>
