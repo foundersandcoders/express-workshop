@@ -12,5 +12,8 @@
     "express": "^4.15.3",
     "morgan": "^1.8.2",
     "serve-favicon": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

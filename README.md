@@ -13,7 +13,7 @@ The workshop is composed of a number of steps with source files included in the 
 
 ## Workshop tasks
 
-Let's code along the solutions to the following tasks.
+Let's code along the solutions to the following tasks. A global installation of `nodemon` may be helpful when completing the tasks: `npm i -g nodemon`
 
 1. **Hello world**
     - Task
