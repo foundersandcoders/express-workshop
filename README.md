@@ -105,7 +105,8 @@ Let's code along the solutions to the following tasks. A global installation of 
 
 
 ## Tips
-    - You can run `nodemon` in a quiet mode with: `nodemon app.js -q`
+
+- You can run `nodemon` in a quiet mode with: `nodemon app.js -q`
 
 
 ## Resources
