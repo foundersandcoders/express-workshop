@@ -4,10 +4,12 @@
 
 The workshop is composed of a number of steps with source files included in the individual folders. Before we start, let's go through some information about what Express is and why we use it.
 
+
 ## Introduction to Express
 - In summary, express is a minimal and **unopinionated** web framework for Node.
 - Express **handles low level functionality of the Node web server** so that you can focus on the business logic of your app.
 - Express provides **only a thin layer of abstraction over vanilla Node** `http` server features. If required you can even add vanilla `http` code and it will be compatible with the Express app.
+
 
 ## Workshop tasks
 
@@ -75,51 +77,37 @@ Let's code along the solutions to the following tasks.
       - Serve `page node found` with a status code of 404
       - Serve `internal server error` with a status code of 500, for example when trying to call an undefined function in one of the route handlers
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1. **Prepare for production**
     - Tasks
-      - set Port number
-      - Disable `Powered by express` header'
-      ```js
-      app.disable('x-powered-by');
-      ```
+      - Set port number
+      - Disable `Powered by express` header' (check headers before and after in Chrome Dev Tools -> Network);
       - Enable compression
-      ```js
-      app.use('compression()');
-      ```
-      - max age on static
-      - Split app into modules
-      - create heroku app
+      - Let browser know to cache static resources for 30 days.
+
+1. **Split into modules**
+    - Tasks
+      - Split the app into modules
+        1. Create a new starting point: `index.js`
+        2. First move routes to the `controllers/index.js` folder
+        3. Then seperate routes out into individual files.
+
+        ```
+        13-split-into-modules
+        ├── public
+        └── src
+            └── app.js
+            └── index.js
+            └── controllers
+                └── error.js
+                └── fruit.js
+                └── index.js
+        ```
+
+
+## Tips
+    - You can run `nodemon` in a quiet mode with: `nodemon app.js -q`
+
+
+## Resources
+
+- [6 Easy Ways to Speed Up Express](http://stackabuse.com/6-easy-ways-to-speed-up-express/)

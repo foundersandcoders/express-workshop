@@ -1,11 +1,10 @@
 {
   "name": "express-workshop",
   "version": "1.0.0",
-  "main": "app.js",
   "author": "PiotrBerebecki",
   "license": "MIT",
   "scripts": {
-    "start": "node 12-prepare-for-production/src/app.js"
+    "start": "node 13-split-into-modules/src/app.js"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
