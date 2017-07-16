@@ -8,7 +8,8 @@ app.use((req, res, next) => {
   next();
 });
 
-// handle requests and pass control to the next middleware
+// handle '/' get requests with 'hello world'
+// and pass control to the next middleware
 app.get('/', (req, res, next) => {
   res.send('Hello world');
   next();
