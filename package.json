@@ -4,6 +4,9 @@
   "main": "app.js",
   "author": "PiotrBerebecki",
   "license": "MIT",
+  "scripts": {
+    "start": "node 11-handle-errors/src/app.js",
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "compression": "^1.7.0",
