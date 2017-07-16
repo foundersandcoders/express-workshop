@@ -111,6 +111,7 @@ Let's code along the solutions to the following tasks.
 
 1. **Prepare for production**
     - Tasks
+      - set Port number
       - Disable `Powered by express` header'
       ```js
       app.disable('x-powered-by');
@@ -121,3 +122,4 @@ Let's code along the solutions to the following tasks.
       ```
       - max age on static
       - Split app into modules
+      - create heroku app
