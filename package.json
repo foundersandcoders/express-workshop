@@ -4,7 +4,7 @@
   "author": "PiotrBerebecki",
   "license": "MIT",
   "scripts": {
-    "start": "node 13-split-into-modules/src/app.js"
+    "start": "node 13-split-into-modules/src/index.js"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
