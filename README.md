@@ -8,7 +8,7 @@ The workshop is composed of a number of steps with source files included in the 
 ## Introduction to Express
 - In summary, express is a minimal and **unopinionated** web framework for Node.
 - Express **handles low level functionality of the Node web server** so that you can focus on the business logic of your app.
-- Express provides **only a thin layer of abstraction over vanilla Node** `http` server features. If required you can even add vanilla `http` code and it will be compatible with the Express app.
+- Express provides **only a thin layer of abstraction over vanilla Node** `http` server features. If required you can even add vanilla `http` code and it will be compatible with an Express app.
 
 
 ## Workshop tasks
