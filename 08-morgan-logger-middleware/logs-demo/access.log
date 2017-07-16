@@ -1,0 +1,2 @@
+::1 - - [16/Jul/2017:16:09:57 +0000] "GET / HTTP/1.1" 200 12 "http://localhost:3000/fruit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+::1 - - [16/Jul/2017:16:09:58 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/fruit" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"

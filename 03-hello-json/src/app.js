@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = express();
 
+// send send object as json
 app.get('/', (req, res) => {
   res.json({ community: 'founders & coders' });
 });

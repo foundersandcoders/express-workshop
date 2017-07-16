@@ -1,3 +1,4 @@
+// handle client and server errors
 const path = require('path');
 
 exports.client = (req, res) => {

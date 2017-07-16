@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = express();
 
+// create 3 handlers for 3 paths
 app.get('/london', (req, res) => {
   res.send('Hello London');
 });

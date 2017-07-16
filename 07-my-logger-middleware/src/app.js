@@ -2,16 +2,19 @@ const express = require('express');
 
 const app = express();
 
+// middleware logging timestamp before handling requests
 app.use((req, res, next) => {
   console.log(Date.now(), 'before');
   next();
 });
 
+// handle requests and pass control to the next middleware
 app.get('/', (req, res, next) => {
   res.send('Hello world');
   next();
 });
 
+// middleware logging timestamp after handling requests
 app.use((req, res) => {
   console.log(Date.now(), 'after');
 });

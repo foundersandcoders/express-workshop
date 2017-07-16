@@ -11,10 +11,10 @@ const accessLogStream = fs.createWriteStream(
   { flags: 'a' }
 );
 
-// setup morgan logger
+// setup morgan logger in 'combined' and stream data to the write stream
 app.use(morgan('combined', { stream: accessLogStream }));
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
   res.send('Hello Dexter');
 });
 

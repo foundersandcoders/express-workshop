@@ -1,3 +1,4 @@
+// handle '/fruit' get and post requests
 const path = require('path');
 
 exports.get = (req, res) => {

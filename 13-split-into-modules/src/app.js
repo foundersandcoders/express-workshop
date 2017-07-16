@@ -21,4 +21,5 @@ app.use(
 );
 app.use(controllers);
 
+// export the app
 module.exports = app;

@@ -1,3 +1,4 @@
+// use express.Router() class and load it with controllers
 const express = require('express');
 const path = require('path');
 const router = express.Router();
