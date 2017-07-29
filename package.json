@@ -4,7 +4,7 @@
   "author": "PiotrBerebecki",
   "license": "MIT",
   "scripts": {
-    "start": "node 13-split-into-modules/src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
