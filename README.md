@@ -13,7 +13,7 @@ The workshop is composed of a number of steps with source files included in the 
 
 ### Library vs framework
 - A library is essentially a set of **functions that you can call**. The key idea behind libraries is code reuse: someone writes a bundle of code that is generally useful and can be shared across applications, so that other developers don't have to write it from scratch each time. Examples: jQuery, Underscore, Ramda, Lodash, Moment. Many of the npm modules can be thought of as libraries, e.g. the Request module.
-- A framework embodies some abstract design, with more behaviour built in. In order to use it you need to insert your behaviour into various places in the framework either by subclassing or by plugging in your own classes. The **framework's code then calls your code** at these points. Examples: Angular, Express, Hapi, Koa.
+- A framework embodies some abstract design, with more behaviour built in. In order to use it you need to insert your behaviour into various places in the framework. The **framework's code then calls your code** at these points. Examples: Angular, Express, Hapi, Koa.
 - The key difference between a library and a framework is that with the library, you are in control. With the framework, the control is inverted: the framework calls you ('the Hollywood principle'): "Don't call us, we'll call you".
 ![library vs framework](./images/library-framework.png)
 
