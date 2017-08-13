@@ -1,0 +1,276 @@
+/***********************************************
+  $variables
+***********************************************/
+:root {
+  --limited-width-container: 61.25em;
+  --color-text-main: #333;
+}
+
+/***********************************************
+  $reset
+***********************************************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+/***********************************************
+  $page layout
+***********************************************/
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+}
+
+/***********************************************
+  $navbar
+***********************************************/
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__container {
+  margin: 0 auto;
+  max-width: var(--limited-width-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  color: var(--color-text-main);
+  text-transform: uppercase;
+}
+
+.navbar__link:hover {
+  border-bottom: solid 3px var(--color-text-main);
+}
+
+.navbar__link--active {
+  border-bottom: solid 3px var(--color-text-main);
+}
+
+/***********************************************
+  $main
+***********************************************/
+.main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main__container--limited-width {
+  margin: 0 auto;
+  max-width: var(--limited-width-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main__container--full-width {
+  margin: 0 auto;
+  max-width: 100em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main__title {
+  margin-bottom: 1rem;
+}
+
+/***********************************************
+  $footer
+***********************************************/
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--limited-width-container);
+  padding: 1rem 1rem;
+  color: #333;
+}
+
+/***********************************************
+  $home page
+***********************************************/
+.home__hero {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+/***********************************************
+  $fruit page
+***********************************************/
+.fruit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fruit-form__label {
+  display: none;
+}
+
+.fruit-form__input {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.fruit-form__btn {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+@media (min-width: 40rem) {
+  .fruit-form__input,
+  .fruit-form__btn {
+    width: 50%;
+  }
+}
+
+.fruit__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fruit__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+  padding: 0.4rem;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 30em) {
+  .fruit__item {
+    flex-basis: 48%;
+  }
+}
+
+@media (min-width: 48em) {
+  .fruit__item {
+    flex-basis: 32%;
+  }
+}
+
+.fruit__image {
+  width: 100%;
+  height: 16rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.fruit__info {
+  margin-top: 0.2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fruit__name {
+  font-size: 1.2rem;
+}
+
+.fruit__fav-btn {
+  fill: white;
+  stroke: #657786;
+  stroke-width: 2px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.fruit__fav-btn--selected {
+  fill: #e0245e;
+  stroke: #e0245e;
+  transition: all 0.2s;
+}
+
+/***********************************************
+  $error page
+***********************************************/
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.error__desc {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.error__msg {
+  color: #999;
+}
