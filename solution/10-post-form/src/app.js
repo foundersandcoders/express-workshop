@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
-
+// import 'body-parser' module
+const bodyParser = require('body-parser');
 
 const app = express();
 
