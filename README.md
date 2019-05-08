@@ -107,4 +107,4 @@ Let's code along the solutions to the following tasks. A global installation of 
 
 ## Resources
 
-- [6 Easy Ways to Speed Up Express](http://stackabuse.com/6-easy-ways-to-speed-up-express/)
+- [6 Easy Ways to Speed Up Express](https://stackabuse.com/6-easy-ways-to-speed-up-express/)
